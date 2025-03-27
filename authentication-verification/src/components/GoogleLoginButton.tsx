@@ -1,5 +1,6 @@
 import { GoogleLogin } from "@react-oauth/google";
 import { useAuth } from "../context/AuthContext";
+import "../styles/GoogleLoginButton.css";
 
 export default function GoogleLoginButton() {
   const { user, login, logout } = useAuth();
@@ -63,15 +64,21 @@ export default function GoogleLoginButton() {
       ) : (
         <div>
           <p>Welcome, {user.name}!</p>
-          <button
-            className="mt-4 sm:mt-6 px-6 py-3 text-white font-medium rounded-md"
-            style={{
-              backgroundColor: "#0D98BA"
-            }}
-            onClick={logout}
-          >
-            Cerrar sesión
-          </button>
+          <div className="relative">
+            <div className="absolute flex justify-start ">
+              <button className="mt-4 sm:mt-6 px-6 py-3 text-white font-medium rounded-md kycButton">
+                KYCButton
+              </button>
+            </div>
+            <div className="flex justify-end ">
+              <button
+                className="mt-4 sm:mt-6 px-6 py-3 text-black font-medium rounded-md logoutButton"
+                onClick={logout}
+              >
+                Cerrar sesión
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>

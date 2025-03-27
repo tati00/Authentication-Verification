@@ -10,7 +10,7 @@ function App() {
         alt="Circular neural network background"
         className="min-h-full max-w-full object-cover animate-pulse-scale animate-spin-slow"
       />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white  rounded-xl shadow-lg border border-gray-200 p-8 max-w-md w-full">
+      <div className="absolute transform bg-white rounded-xl shadow-lg border border-gray-200 p-15 max-w-full w-lg opacity-90">
         <h1 className="text-2lg font-bold mb-4">Authenticacion-Verification</h1>
         <br />
         <GoogleLoginButton />

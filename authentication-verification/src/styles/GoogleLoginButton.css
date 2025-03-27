@@ -1,0 +1,10 @@
+@import "tailwindcss";
+.kycButton{
+    background-color: #0d98ba;
+}
+.kycButton:hover, .logoutButton:hover{
+    background-color: oklch(0.623 0.214 259.815);
+}
+.logoutButton{
+    border-color: #0d98ba;
+}
