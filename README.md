@@ -4,7 +4,7 @@ Visit the website: https://tati00.github.io/Authentication-Verification/
 # How to run the code
 From branch `main`:
 - From any terminal `git clone HTTPS_Code`
-- In the the directory [authentication-verification](./autentication-verification)
+- In the the directory **authentication-verification**.
   - npm install @react-oauth/google axios tailwindcss
   - npm install
   - npm run dev (development view)
