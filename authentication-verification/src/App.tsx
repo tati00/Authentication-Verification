@@ -1,28 +1,21 @@
-import { useState } from "react";
-
 import "./App.css";
+import backgroundImage from './assets/fondo-login.png';
+import GoogleLoginButton from "./components/GoogleLoginButton";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1 className="text-3xl font-bold ">Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+    <div className="absolute inset-0 flex items-center justify-center overflow-hidden bg-black">
+      <img
+        src={backgroundImage} 
+        alt="Circular neural network background"
+        className="min-h-full max-w-full object-cover animate-pulse-scale animate-spin-slow"
+      />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white  rounded-xl shadow-lg border border-gray-200 p-8 max-w-md w-full">
+        <h1 className="text-2lg font-bold mb-4">Authenticacion-Verification</h1>
+        <br />
+        <GoogleLoginButton />
       </div>
-      <div className="bg-blue-500 text-white p-4">
-        <p>¡Tailwind CSS está funcionando en React + TypeScript!</p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   );
 }
 
